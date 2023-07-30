@@ -1,0 +1,19 @@
+div.nav{
+    display: flex;
+    flex-direction: row;
+}
+#restNavLinks{
+    display: flex;
+    flex:1;
+}
+#restNavLinks p{
+    flex:1;
+}
+.nav p{
+    font-size: 20px;
+}
+.nav p#navHeader{
+    flex:3;
+    font-size:23px;
+    font-weight: bold;
+}
