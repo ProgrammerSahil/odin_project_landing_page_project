@@ -1,3 +1,20 @@
+:root{
+    --surfaceLight:#F67154;
+    --surfaceDark:#D04211;
+    --blue:#2566E8;
+    --smoke:#E7D9D4;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--smoke);
+}
+.upperDark{
+    background-image: linear-gradient(var(--surfaceLight) 5%, var(--surfaceDark) 95%);
+    padding-bottom:160px;
+    color:white;
+}
 div.nav{
     display: flex;
     flex-direction: row;
@@ -6,14 +23,51 @@ div.nav{
     display: flex;
     flex:1;
 }
-#restNavLinks p{
+#restNavLinks a{
     flex:1;
+    transition-duration: 0.2s;
 }
-.nav p{
+.nav a{
     font-size: 20px;
+    padding:25px;
+    text-decoration: none;
+    color: white;
 }
 .nav p#navHeader{
     flex:3;
     font-size:23px;
     font-weight: bold;
+    padding-left:180px;
+}
+
+div.upperContent{
+    display:flex;
+    justify-content: space-between;
+    padding:0px 180px;
+    padding-top:180px;
+}
+
+div.upperContent .leftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.upperContent .leftContent #smallAbout{
+    font-size: 20px;
+}
+
+div.upperContent .leftContent #signUp{
+    width:100px;
+    background-color: var(--blue);
+    border: none;
+    border-radius:5px;
+    padding:8px;
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+}
+
+#restNavLinks a:hover{
+    color:var(--blue);
 }
