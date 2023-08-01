@@ -71,3 +71,42 @@ div.upperContent .leftContent #signUp{
 #restNavLinks a:hover{
     color:var(--blue);
 }
+
+.lowerLight{
+    padding-bottom: 200px;
+}
+
+
+.lowerLight #menuHeading{
+    text-align: center;
+    padding-top:100px;
+}
+
+.lowerLight .menus{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left:200px;
+    padding-right:200px;
+    padding-top: 100px;
+}
+
+.lowerLight .menus .menu img{
+    border-radius: 8px;
+    border:5px solid var(--surfaceLight);
+    transition-duration: 0.2s;
+}
+
+.lowerLight .menus .menu img:hover{
+    border:5px solid var(--surfaceDark);
+}
+
+.lowerLight .menus .menu #itemName{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+.lowerLight .menus .menu{
+    cursor:pointer;
+}
