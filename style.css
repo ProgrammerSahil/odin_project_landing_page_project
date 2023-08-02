@@ -3,6 +3,7 @@
     --surfaceDark:#D04211;
     --blue:#2566E8;
     --smoke:#E7D9D4;
+    --smokeOrange: #F2A98E;
 }
 html, body{
     padding: 0px;
@@ -11,7 +12,7 @@ html, body{
     background-color: var(--smoke);
 }
 .upperDark{
-    background-image: linear-gradient(var(--surfaceLight) 5%, var(--surfaceDark) 95%);
+    background-image: linear-gradient( var(--surfaceLight) 5%, var(--surfaceDark) 95%);
     padding-bottom:160px;
     color:white;
 }
@@ -109,4 +110,30 @@ div.upperContent .leftContent #signUp{
 
 .lowerLight .menus .menu{
     cursor:pointer;
+}
+
+
+.quote{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    background-color: var(--smokeOrange);
+    padding:100px;
+}
+
+.quote .quoteBy{
+    margin-left:500px;
+    margin-top:30px;
+}
+
+.quote .quoteText{
+    font-size: 30px;
+}
+
+.copyright{
+    background-color: var(--surfaceDark);
+    text-align: center;
+    font-size: 25px;
+    padding:50px;
+    color: white;
 }
